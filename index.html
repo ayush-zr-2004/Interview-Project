@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>System Info Viewer</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f2f6fb;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 32px rgba(40,50,80,.1);
+      padding: 36px 38px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 2.4em;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .btn {
+      display: block;
+      margin: 0 auto 26px auto;
+      padding: 16px 36px;
+      background: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      font-size: 1.2em;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(56,163,220,.18);
+      transition: background .15s;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #38a4d3 0%, #38d39f 100%);
+    }
+    .info-area {
+      margin-top: 26px;
+      padding: 20px;
+      background: #f6f8ff;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px rgba(40,60,120,.07);
+    }
+    .info-area p {
+      font-size: 1.1em;
+      margin: 0 0 10px 0;
+    }
+    .processes {
+      max-height: 220px;
+      overflow-y: auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px;
+      box-shadow: 0 1px 6px rgba(37,85,167,.07);
+      margin-top: 16px;
+      font-family: monospace;
+      font-size: 1em;
+    }
+    .processes ul {
+      margin: 0; padding: 0 0 0 18px;
+    }
+    .title {
+      margin-bottom: 16px;
+      font-weight: 600;
+      color: #217dbb;
+      font-size: 1.3em;
+    }
+    .label {
+      color: #222;
+      font-weight: 500;
+    }
+    .value {
+      color: #556;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>System Info Viewer</h1>
+    <button id="checkBtn" class="btn">Check System Info</button>
+    <div class="info-area" id="info"></div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

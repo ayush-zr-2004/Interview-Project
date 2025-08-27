@@ -1,0 +1,12 @@
+{
+  "name": "system-info-viewer",
+  "version": "1.0.0",
+  "description": "Electron app to show system info",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
